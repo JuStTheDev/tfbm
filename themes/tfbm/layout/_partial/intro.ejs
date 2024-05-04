@@ -1,10 +1,11 @@
 <div id="intro">
-    <div class="logo-container"
-         style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 2rem">
+    <div class="logo-container">
         <div class="logo">
-            <a href="<%- url_for('') %>" style="border: none"><%- image_tag('images/logo.gif', {alt: "Logo"}) %></a>
+            <a href="<%- url_for('/') %>">
+                <%- image_tag('images/logo.gif', {alt: "Logo"}) %>
+            </a>
         </div>
-        <h1 style="margin-bottom: 0; text-align: left"><%- title %></h1>
+        <h1><%- title %></h1>
     </div>
 
     <% if(displayIntroText) { %>

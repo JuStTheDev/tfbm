@@ -26,6 +26,35 @@
   width: calc(100% - #{_size(padding) * 2});
   max-width: _size(wrapper);
 
+  > .logo-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @include breakpoint('>=large') {
+      flex-direction: row;
+    }
+
+    > .logo > a {
+      border: none;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-top: 2rem;
+
+      @include breakpoint('>=large') {
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 0;
+      }
+    }
+  }
+
   h1 {
     font-size: 5rem;
     line-height: 1;
@@ -68,16 +97,15 @@
   @include breakpoint('<=small') {
     @include padding(_size(padding) * 1.5, _size(padding) * 1);
 
-
     h1 {
-      font-size: 3.25rem;
+      font-size: 2.75rem;
       line-height: 1.1;
       margin-bottom: _size(element-margin) * 0.5;
     }
 
     p {
       font-size: 1rem;
-      margin-top: 0rem;
+      margin-top: 0;
     }
 
     .actions {
