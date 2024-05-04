@@ -12,7 +12,9 @@
   margin: 0 auto;
   overflow: hidden;
   padding: 0 2rem 0 0;
-  position: relative;
+  position: sticky;
+  top: 0;
+  backdrop-filter: brightness(40%) blur(5px);
   width: calc(100% - #{_size(padding) * 2});
   max-width: _size(wrapper);
   z-index: 2;
