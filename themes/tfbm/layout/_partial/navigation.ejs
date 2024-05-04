@@ -1,0 +1,16 @@
+<nav id="nav">
+    <ul class="links">
+        <% site.pages.forEach((page) => { %>
+        <% if(page.inNavigation) { %>
+        <li class="<%- is_current(page.path) ? 'active' : '' %>">
+            <a href="<%- url_for(page.path) %>">
+                <%- page.title %>
+            </a></li>
+        <% }}); %>
+    </ul>
+    <ul class="icons">
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
+</nav>

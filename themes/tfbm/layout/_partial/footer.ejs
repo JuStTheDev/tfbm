@@ -1,0 +1,54 @@
+<footer id="footer">
+    <section>
+        <form method="post" action="#">
+            <div class="fields">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <div class="field">
+                    <label for="email">E-Mail</label>
+                    <input type="text" name="email" id="email"/>
+                </div>
+                <div class="field">
+                    <label for="message">Nachricht an uns</label>
+                    <textarea name="message" id="message" rows="3"></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message"/></li>
+            </ul>
+        </form>
+    </section>
+    <section class="split contact">
+        <section class="alt">
+            <h3>Adresse</h3>
+            <p>Speckweg 6<br/>
+                68305 Mannheim</p>
+        </section>
+        <section>
+            <h3>E-Mail</h3>
+            <p><a href="#">info@tischfußball-mannheim.de</a></p>
+        </section>
+        <section>
+            <h3>Social Media</h3>
+            <ul class="icons alt">
+                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+        </section>
+    </section>
+</footer>
+
+<!-- Copyright -->
+<div id="copyright">
+    <ul>
+        <li>&copy; Tischfußball Mannheim e.v.</li>
+        <li>
+            <a href="<%- url_for('/impressum') %>">
+                Impressum
+            </a>
+        </li>
+    </ul>
+</div>

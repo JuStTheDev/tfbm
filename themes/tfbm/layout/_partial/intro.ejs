@@ -1,0 +1,17 @@
+<div id="intro">
+    <div class="logo-container"
+         style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 2rem">
+        <div class="logo">
+            <!--<img src="/tischfussball-mannheim/images/logo.gif" alt="" style="margin-right: 2rem">-->
+            <a href="/" style="border: none"><%- image_tag('images/logo.gif', {alt: "Logo"}) %></a>
+        </div>
+        <h1 style="margin-bottom: 0; text-align: left"><%- title %></h1>
+    </div>
+
+    <% if(displayIntroText) { %>
+        <p>Unser Verein ist mehr als nur ein Ort, an dem wir unsere Leidenschaft für Tischfußball teilen - wir sind eine
+            Gemeinschaft, die sich für den Sport begeistert. Ob Anfänger oder erfahrener Spieler, bei uns ist jeder
+            willkommen! Tauche ein in die spannende Welt des Tischfußballs und werde Teil unserer Community!
+        </p>
+    <% } %>
+</div>

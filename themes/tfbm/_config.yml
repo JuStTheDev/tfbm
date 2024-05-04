@@ -1,0 +1,7 @@
+node_sass:
+  debug: true
+  outputStyle: compressed
+  sourceComments: true
+  precision: 6
+  includePaths:
+    - node_modules
