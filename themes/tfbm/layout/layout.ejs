@@ -4,11 +4,17 @@
     <%- partial('_partial/header') %>
     <%- body %>
     <%- partial('_partial/footer') %>
+    <a href="#navPanel" id="navPanelToggle"></a>
+    <div id="navPanel">
+        <%- partial('_partial/navigation', {omitID: true}) %>
+        <a class="close" id="nav-close"></a>
+    </div>
     <script src="/tfbm/js/jquery.min.js"></script>
     <script src="/tfbm/js/jquery.scrollex.min.js"></script>
     <script src="/tfbm/js/jquery.scrolly.min.js"></script>
     <script src="/tfbm/js/browser.min.js"></script>
     <script src="/tfbm/js/breakpoints.min.js"></script>
     <script src="/tfbm/js/main.js"></script>
+
 </body>
 </html>

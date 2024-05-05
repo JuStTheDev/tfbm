@@ -1,5 +1,5 @@
 <%- partial('_partial/intro', {title: page.category, displayIntroText: false}) %>
-<%- partial('_partial/navigation') %>
+<%- partial('_partial/navigation', {omitID: false}) %>
 <div id="main">
     <% var category = site.categories.findOne({name: page.category}) %>
     <section class="posts">

@@ -10,6 +10,10 @@ section, article {
   &.special {
     text-align: center;
   }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 header {

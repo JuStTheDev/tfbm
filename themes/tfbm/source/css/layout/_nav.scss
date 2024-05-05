@@ -6,6 +6,11 @@
           'transform 1s ease',
           'opacity 1s ease'
   ));
+
+  @include breakpoint('<medium') {
+    display: none;
+  }
+
   background: rgba(255, 255, 255, 0.175);
   height: 4rem;
   line-height: 4rem;

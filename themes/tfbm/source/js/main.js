@@ -5,6 +5,13 @@
 */
 
 (function ($) {
-
+    $(document.getElementById('navPanelToggle')).click(function (event) {
+        $('body').toggleClass('nav-visible');
+        event.preventDefault();
+    });
+    $(document.getElementById('nav-close')).click(function (event) {
+        $('body').removeClass('nav-visible');
+        event.preventDefault();
+    });
 
 })(jQuery);

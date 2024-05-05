@@ -1,4 +1,4 @@
-<nav id="nav">
+<nav <%- omitID ? "" : 'id="nav"' %>>
     <ul class="links">
         <% site.pages.forEach((page) => { %>
             <% if(page.inNavigation) { %>
