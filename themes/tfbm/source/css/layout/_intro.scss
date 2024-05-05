@@ -19,7 +19,8 @@
           'transform 1s ease'
   ));
   margin: 0 auto;
-  position: relative;
+  position: sticky;
+  top: 0;
   cursor: default;
   text-align: center;
   z-index: 1;

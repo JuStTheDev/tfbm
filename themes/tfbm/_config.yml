@@ -5,3 +5,4 @@ node_sass:
   precision: 6
   includePaths:
     - node_modules
+language: de-de

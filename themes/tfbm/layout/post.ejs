@@ -1,11 +1,17 @@
+<%- partial('_partial/intro', {title: page.title, displayIntroText: false}) %>
 <%- partial('_partial/navigation') %>
 <div id="main">
-    <!-- Featured Post -->
-    <article class="post featured">
+    <article class="page">
         <header class="major">
             <h2><%- page.title %></h2>
-            <p><%- page.date %></p>
+            <p><%- page.date.format('LLLL') %></p>
             <p><%- page.author %></p>
+            <%- list_categories(page.categories, {
+                show_count: false,
+                class: 'article-category',
+                style: 'none',
+                separator: '►'
+            }) %>
         </header>
         <%- page.content %>
     </article>

@@ -1,0 +1,18 @@
+<%- partial('_partial/intro', {title: page.category, displayIntroText: false}) %>
+<%- partial('_partial/navigation') %>
+<div id="main">
+    <% var category = site.categories.findOne({name: page.category}) %>
+    <section class="posts">
+        <% category.posts.forEach((post) => { %>
+            <article>
+                <header>
+                    <span class="date"><%- post.date.format('LLLL') %></span>
+                    <h2>
+                        <a href="<%- url_for(post.path) %>"><%- post.title %></a>
+                    </h2>
+                </header>
+                <p><%- post.excerpt %></p>
+            </article>
+        <% }); %>
+    </section>
+</div>
