@@ -77,3 +77,10 @@ body {
   background-attachment: fixed;
   background-repeat: repeat-y;
 }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
