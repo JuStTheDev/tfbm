@@ -1,6 +1,6 @@
 <nav <%- omitID ? "" : 'id="nav"' %>>
     <ul class="links">
-        <% site.pages.forEach((page) => { %>
+        <% site.pages.filter((page) => page.rank < 100).sort('rank').forEach((page) => { %>
             <% if(page.inNavigation) { %>
                 <li class="<%- is_current(page.path) ? 'active' : '' %>">
                     <a href="<%- url_for(page.path) %>">
@@ -10,8 +10,15 @@
         <li class="<%- is_current('categories/turniere') ? 'active' : '' %>">
             <a href="<%- config.root %><%- site.categories.findOne({name: 'turniere'}).path %>">Turniere</a>
         </li>
-            <li class="<%- is_current('categories/neuigkeiten') ? 'active' : '' %>">
-                <a href="<%- config.root %><%- site.categories.findOne({name: 'neuigkeiten'}).path %>">Neuigkeiten</a>
-            </li>
+        <li class="<%- is_current('categories/neuigkeiten') ? 'active' : '' %>">
+            <a href="<%- config.root %><%- site.categories.findOne({name: 'neuigkeiten'}).path %>">Neuigkeiten</a>
+        </li>
+            <% site.pages.filter((page) => page.rank >= 100).sort('rank').forEach((page) => { %>
+                <% if(page.inNavigation) { %>
+                    <li class="<%- is_current(page.path) ? 'active' : '' %>">
+                        <a href="<%- url_for(page.path) %>">
+                            <%- page.title %>
+                        </a></li>
+            <% }}); %>
     </ul>
 </nav>

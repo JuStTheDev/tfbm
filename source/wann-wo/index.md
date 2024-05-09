@@ -1,7 +1,8 @@
 ---
 title: Wann und Wo
 date: 2024-05-04 20:00:00
-inNavigation: true
+inNavigation: false
+rank: 6
 ---
 
 ## Tischfußball Mannheim ist umgezogen

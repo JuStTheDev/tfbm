@@ -2,6 +2,7 @@
 title: Impressum
 date: 2024-05-04 17:00:00
 inNavigation: false
+rank: 2
 ---
 
 V.i.S.d.P.: Claus Keller, Mannheim, admin \[AT\] tischfussball-mannheim.de
